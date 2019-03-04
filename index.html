@@ -1,0 +1,162 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+</head>
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script  language="JavaScript" type="text/javascript"  src="js/jquery-3.2.1.js"></script>
+<script src="js/distribute.js"></script>
+<script>if (window.module) module = window.module;</script>
+
+<style type="text/css">
+    body {
+        font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #333333;
+
+    }
+
+    .signUp {
+        position: relative;
+        margin: 50px auto;
+        width: 280px;
+        padding: 33px 25px 29px;
+        background: #FFFFFF;
+        border-bottom: 1px solid #C4C4C4;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .signUp:before,
+    .signUp:after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: inherit;
+        border-bottom: 1px solid #D2D2D2;
+        border-radius: 4px;
+    }
+
+    .signUp:after {
+        bottom: 3px;
+        border-color: #DCDCDC;
+    }
+
+    .signUpTitle {
+        margin: -25px -25px 25px;
+        padding: 15px 25px;
+        line-height: 35px;
+        font-size: 26px;
+        font-weight: 300;
+        color: #777;
+        text-align: center;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+        background: #F7F7F7;
+    }
+
+    .signUpTitle:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: #0071c3c7;
+        border-radius: 5px 5px 0 0;
+
+    }
+
+    input {
+        font-family: inherit;
+        color: inherit;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .signUpInput {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 25px;
+        padding: 0 15px 2px;
+        font-size: 17px;
+        background: white;
+        border: 2px solid #EBEBEB;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 -2px #EBEBEB;
+        box-shadow: inset 0 -2px #EBEBEB;
+    }
+
+    .signUpInput:focus {
+        border-color: #62C2E4;
+        outline: none;
+        -webkit-box-shadow: inset 0 -2px #62C2E4;
+        box-shadow: inset 0 -2px #62C2E4;
+    }
+
+    .lt-ie9 .signUpInput {
+        line-height: 48px;
+    }
+
+    .signUpButton {
+          margin-bottom: 3px;
+        position: relative;
+        vertical-align: top;
+        width: 100%;
+        height: 54px;
+        padding: 0;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        background: #026ebda6;
+        border: 0;
+        /* border-bottom: 2px solid #D76B60; */
+        border-radius: 5px;
+        cursor: pointer;
+        /* -webkit-box-shadow: inset 0 -2px #D76B60; */
+        /* box-shadow: inset 0 -2px #D76B60; */
+    }
+
+    .signUpButton:active {
+        top: 1px;
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .joinButton{
+        position: relative;
+        vertical-align: top;
+        display: block;
+        text-decoration: none;
+        height: 54px;
+        padding: 0;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        background: #F0776C;
+        border: 0;
+        border-bottom: 2px solid #D76B60;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-box-shadow: inset 0 -2px #D76B60;
+        box-shadow: inset 0 -2px #D76B60;
+    }
+</style>
+<body>
+<form class="signUp" id="signupForm">
+    <h1 class="signUpTitle">로그인페이지</h1>
+    <input type="text"  name="id" id="id" class="signUpInput" placeholder="Enter your ID" autofocus required>
+    <input type="password"  name="pw" id="password" class="signUpInput" placeholder="Enter your password" required>
+    <input type="button" value="로그인!" class="signUpButton"  onclick="loginConfirm2()" />
+    <input type="button" value="회원가입!" class="signUpButton"  onclick="join()" />
+
+</form>
+</body>
+</html>

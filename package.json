@@ -1,0 +1,95 @@
+{
+  "build": {
+    "productName": "HelloElectron",
+    "appId": "com.electron.hello",
+    "asar": true,
+    "protocols": {
+      "name": "helloElectron",
+      "schemes": [
+        "helloelectron"
+      ]
+    },
+    "mac": {
+      "target": [
+        "default"
+      ],
+      "icon": "./resources/installer/Icon.icns"
+    },
+    "dmg": {
+      "title": "HelloElectron",
+      "icon": "./resources/installer/Icon.icns"
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./resources/installer/Icon.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "zip",
+        "tar.gz"
+      ],
+      "icon": "./resources/linuxicon"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "resources/installer/",
+      "output": "dist/",
+      "app": "."
+    }
+  },
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:osx": "build --mac",
+    "build:linux": "npm run build:linux32 && npm run build:linux64",
+    "build:linux32": "build --linux --ia32",
+    "build:linux64": "build --linux --x64",
+    "build:win": "npm run build:win32 && npm run build:win64",
+    "build:win32": "build --win --ia32",
+    "build:win64": "build --win --x64",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "postinstall": "install-app-deps"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.4",
+    "electron-packager": "^13.0.1",
+    "jquery": "^3.3.1",
+    "oracledb": "^3.0.1",
+    "request": "2.88.0",
+    "sqlite3": "^4.0.6"
+  },
+  "dependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.4",
+    "electron-packager": "^13.0.1",
+    "jquery": "^3.3.1",
+    "jszip": "^3.1.5",
+    "jszip-utils": "0.0.2",
+    "oracledb": "^3.0.1",
+    "request": "2.88.0",
+    "sqlite3": "^4.0.6"
+  }
+}
