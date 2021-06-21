@@ -3,7 +3,7 @@
 **Clone and run for a quick way to see Electron in action.**
 
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
-![screenshot_of_FileDownload](.screenshots/screenshot_of_FileDownload.PNG)
+![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
 
 **Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
 
