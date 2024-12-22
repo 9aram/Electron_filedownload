@@ -1,6 +1,6 @@
-# electron-progress bar
+# Electron File Download
 
-**Clone and run for a quick way to see Electron in action.**
+**This is a desktop application built with Electron to display a download progress bar based on file sizes. **
 
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
 ![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
