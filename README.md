@@ -19,7 +19,18 @@
 ```bash
 git clone https://github.com/9aram/Electron_filedownload
 ```
-
+2. Navigate into the project directory:
+```bash
+cd Electron_filedownload
+```
+3. Install dependencies:
+```bash
+npm install
+```
+4. Start the app:
+```bash
+npm start
+```
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
 ![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
 
@@ -47,8 +58,6 @@ npm install
 # Run the app
 npm start
 ```
-
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 ## Resources for Learning Electron
 
