@@ -8,7 +8,7 @@
 - Supports downloading files of various sizes (10MB, 100MB, 500MB, 1GB, 10GB).
 - Integrated `JSZipUtils` for handling zip file compression.
 
-## Features
+## Technologies Used
 - **Electron**: For creating the desktop application.
 - **request**: For handling HTTP requests and implementing the download -- progress bar.
 - **stream, pipe**: For efficient file download, especially for large files.
@@ -33,31 +33,6 @@ npm start
 ```
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
 ![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
-
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
 
 ## Resources for Learning Electron
 
