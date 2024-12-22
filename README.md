@@ -2,6 +2,12 @@
 
 **This is a desktop application built with Electron to display a download progress bar based on file sizes. **
 
+## Features
+Built a download progress bar that shows progress based on file size using the request module.
+Utilized streaming and piping for downloading large files efficiently.
+Supports downloading files of various sizes (10MB, 100MB, 500MB, 1GB, 10GB).
+Integrated JSZipUtils for handling zip file compression.
+
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
 ![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
 
