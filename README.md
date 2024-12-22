@@ -1,6 +1,8 @@
 # Electron File Download
-
 **This is a desktop application built with Electron to display a download progress bar based on file sizes. **
+This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
+
 
 ## Features
 - Built a download progress bar that shows progress based on file size using the `request` module.
@@ -31,8 +33,6 @@ npm install
 ```bash
 npm start
 ```
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
-![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
 
 ## Resources for Learning Electron
 
