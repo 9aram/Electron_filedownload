@@ -15,6 +15,11 @@
 - **JSZipUtils**: For zip file compression.
 
 ## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/9aram/Electron_filedownload
+```
+
 This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
 ![screenshot_of_FileDownload](./screenshots/screenshot_of_FileDownload.PNG)
 
